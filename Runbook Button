@@ -1,0 +1,293 @@
+// ==UserScript==
+// @name        Runbook Button
+// @author       Chance Caldwell
+// @version      0.1
+// @namespace   https://gitlab.com/chancecaldwell/triage-scripts/snippets/1886339
+// @match        *://*.managedphishme.com/reports/*
+// @match        *://*.managedphishme.com/clusters/*
+// @grant       none
+// @updateURL    https://gitlab.com/chancecaldwell/triage-scripts/snippets/1886339/raw
+// @downloadURL  https://gitlab.com/chancecaldwell/triage-scripts/snippets/1886339/raw
+// ==/UserScript==
+
+(function(){
+
+
+  window.addEventListener('load', () => {
+    addButton('Runbook', runBook)
+    })
+
+    function addButton() {
+        var input=document.createElement("input");
+        input.type="button";
+        input.value="Runbook";
+        input.onclick = runBook;
+        input.style.border = "1px dashed #FDE3A7";
+
+        input.setAttribute("style", "font-size:16px;position:absolute;top:55px;right:960px;background-color:#107896;color:#ffffff;float:left;");
+        document.body.appendChild(input);
+    }
+
+
+function runBook() {
+
+    var full = window.location.host
+    var parts = full.split('.')
+    var sub = parts[0]
+
+if (sub == 'soundtransit')
+{
+    window.open('https://confluence.corp.phishme.com/display/TMSSP/Sound+Transit+Runbook', '_blank');
+}
+
+if (sub == '7eleven')
+{
+    window.open('https://confluence.corp.phishme.com/display/TMSSP/7Eleven+Runbook', '_blank');
+}
+
+if (sub == 'prm01')
+{
+    window.open('https://confluence.corp.phishme.com/display/TMSSP/Premier%2C+Inc+Runbook', '_blank');
+}
+if (sub == 'amsty')
+{
+    window.open('https://confluence.corp.phishme.com/display/TMSSP/Americas+Styrenics+Runbook', '_blank');
+}
+if (sub == 'avalara')
+{
+    window.open('https://confluence.corp.phishme.com/display/TMSSP/Avalara+Runbook', '_blank');
+}
+if (sub == 'babcock')
+{
+    window.open('https://confluence.corp.phishme.com/display/TMSSP/Babcock+Runbook', '_blank');
+}
+if (sub == 'baincapital')
+{
+    window.open('https://confluence.corp.phishme.com/display/TMSSP/Bain+Capital+Runbook', '_blank');
+}
+
+if (sub == 'bcbsma')
+{
+    window.open('https://confluence.corp.phishme.com/display/TMSSP/Blue+Cross+Blue+Shield+of+Massachusetts+Runbook', '_blank');
+}
+
+if (sub == 'ccf01')
+{
+    window.open('https://confluence.corp.phishme.com/display/TMSSP/Cleveland+Clinic+Foundation+Runbook', '_blank');
+}
+
+if (sub == 'phme01')
+{
+    window.open('https://confluence.corp.phishme.com/display/TMSSP/Cofense+Runbook', '_blank');
+}
+
+if (sub == 'collegeboard')
+{
+    window.open('https://confluence.corp.phishme.com/display/TMSSP/College+Board+Runbook', '_blank');
+}
+
+if (sub == 'csaaig01')
+{
+    window.open('https://confluence.corp.phishme.com/display/TMSSP/CSAA+IG+Runbook', '_blank');
+}
+
+if (sub == 'sni01')
+{
+    window.open('https://confluence.corp.phishme.com/display/TMSSP/Discovery+Runbook', '_blank');
+}
+if (sub == 'drillinginfo')
+{
+    window.open('https://confluence.corp.phishme.com/display/TMSSP/DrillingInfo+Runbook', '_blank');
+}
+
+if (sub == 'hajoca')
+{
+    window.open('https://confluence.corp.phishme.com/display/TMSSP/Hajoca+Runbook', '_blank');
+}
+if (sub == 'hss')
+{
+    window.open('https://confluence.corp.phishme.com/display/TMSSP/Hospital+For+Special+Surgery+Runbook', '_blank');
+}
+
+if (sub == 'hulu')
+{
+    window.open('https://confluence.corp.phishme.com/display/TMSSP/Hulu+Runbook', '_blank');
+}
+if (sub == 'jax')
+{
+    window.open('https://confluence.corp.phishme.com/display/TMSSP/Jackson+Labs+Runbook', '_blank');
+}
+
+if (sub == 'lvhn')
+{
+    window.open('https://confluence.corp.phishme.com/display/TMSSP/Lehigh+Valley+Health+Network+Runbook', '_blank');
+}
+if (sub == 'lifepoint')
+{
+    window.open('https://confluence.corp.phishme.com/display/TMSSP/LifePoint+Health+Runbook', '_blank');
+}
+
+if (sub == 'macerich')
+{
+    window.open('https://confluence.corp.phishme.com/display/TMSSP/Macerich+Runbook', '_blank');
+}
+if (sub == 'msg')
+{
+    window.open('https://confluence.corp.phishme.com/display/TMSSP/Madison+Square+Garden+Runbook', '_blank');
+}
+
+if (sub == 'max01')
+{
+    window.open('https://confluence.corp.phishme.com/display/TMSSP/Market+Axess+Runbook', '_blank');
+}
+if (sub == 'myc01')
+{
+    window.open('https://confluence.corp.phishme.com/display/TMSSP/Mayo+Clinic+Runbook', '_blank');
+}
+
+if (sub == 'mlp01')
+{
+    window.open('https://confluence.corp.phishme.com/display/TMSSP/Millenium+Partners+Runbook', '_blank');
+}
+if (sub == 'motiva01')
+{
+    window.open('https://confluence.corp.phishme.com/display/TMSSP/Motiva+Enterprises+LLC+Runbook', '_blank');
+}
+
+if (sub == 'nhrmc')
+{
+    window.open('https://confluence.corp.phishme.com/display/TMSSP/New+Hanover+Regional+Medical+Center+Runbook', '_blank');
+}
+if (sub == 'omaha')
+{
+    window.open('https://confluence.corp.phishme.com/display/TMSSP/Omaha+Public+Power+District+Runbook', '_blank');
+}
+
+if (sub == 'pivotal')
+{
+    window.open('https://confluence.corp.phishme.com/display/TMSSP/Pivotal+Runbook', '_blank');
+}
+if (sub == 'mhf01')
+{
+    window.open('https://confluence.corp.phishme.com/pages/viewpage.action?pageId=59249743', '_blank');
+}
+
+if (sub == 'stjude')
+{
+    window.open('https://confluence.corp.phishme.com/display/TMSSP/St.+Jude+Children%27s+Research+Hospital+Runbook', '_blank');
+}
+if (sub == 'tmc')
+{
+    window.open('https://confluence.corp.phishme.com/display/TMSSP/TMC+Healthcare+Runbook', '_blank');
+}
+
+if (sub == 'texasmutual')
+{
+    window.open('https://confluence.corp.phishme.com/display/TMSSP/Texas+Mutual+Insurance+Company+Runbook', '_blank');
+}
+if (sub == 'wageworks')
+{
+    window.open('https://confluence.corp.phishme.com/display/TMSSP/WageWorks+Runbook', '_blank');
+}
+if (sub == 'wewrk01')
+{
+    window.open('https://confluence.corp.phishme.com/display/TMSSP/WeWork+Runbook', '_blank');
+}
+
+if (sub == 'zs')
+{
+    window.open('https://confluence.corp.phishme.com/display/TMSSP/ZS+Associates+Runbook', '_blank');
+}
+if (sub == 'adidas')
+{
+    window.open('https://confluence.corp.phishme.com/display/TMSSP/Adidas', '_blank');
+}
+
+if (sub == 'angam01')
+{
+    window.open('https://confluence.corp.phishme.com/pages/viewpage.action?pageId=81560135', '_blank');
+}
+if (sub == 'barclays')
+{
+    window.open('https://confluence.corp.phishme.com/display/TMSSP/Barclays', '_blank');
+}
+
+if (sub == 'heathrow')
+{
+    window.open('https://confluence.corp.phishme.com/display/TMSSP/Heathrow+Runbook', '_blank');
+}
+if (sub == 'hsf')
+{
+    window.open('https://confluence.corp.phishme.com/display/TMSSP/Herbert+Smith+Freehills%2C+LLP+Runbook', '_blank');
+}
+
+if (sub == 'iberdrola')
+{
+    window.open('https://confluence.corp.phishme.com/display/TMSSP/Iberdrola', '_blank');
+}
+if (sub == 'poyry')
+{
+    window.open('https://confluence.corp.phishme.com/display/TMSSP/Poyry', '_blank');
+}
+
+if (sub == 'reassure')
+{
+    window.open('https://confluence.corp.phishme.com/display/TMSSP/ReAssure', '_blank');
+}
+if (sub == 'sartorius')
+{
+    window.open('https://confluence.corp.phishme.com/display/TMSSP/Sartorius', '_blank');
+}
+
+if (sub == 'swr01')
+{
+    window.open('https://confluence.corp.phishme.com/display/TMSSP/Swiss+Re', '_blank');
+}
+if (sub == 'tvn')
+{
+    window.open('https://confluence.corp.phishme.com/display/TMSSP/TVN', '_blank');
+}
+
+if (sub == 'unl01')
+{
+    window.open('https://confluence.corp.phishme.com/display/TMSSP/Unilever', '_blank');
+}
+if (sub == 'allianz')
+{
+    window.open('https://confluence.corp.phishme.com/display/TMSSP/Allianz+Runbook', '_blank');
+}
+
+if (sub == 'cbre')
+{
+    window.open('https://confluence.corp.phishme.com/display/TMSSP/CBRE+Runbook', '_blank');
+}
+if (sub == 'cbs')
+{
+    window.open('https://confluence.corp.phishme.com/display/TMSSP/CBS+Corporation+Runbook', '_blank');
+}
+
+if (sub == 'fticonsulting')
+{
+    window.open('https://confluence.corp.phishme.com/display/TMSSP/FTI+Consulting+Runbook', '_blank');
+}
+if (sub == 'mars')
+{
+    window.open('https://confluence.corp.phishme.com/display/TMSSP/Mars+Global+Services+Runbook', '_blank');
+}
+
+if (sub == 'tasnee')
+{
+    window.open('https://confluence.corp.phishme.com/display/TMSSP/Tasnee', '_blank');
+}
+if (sub == 'terex')
+{
+    window.open('https://confluence.corp.phishme.com/display/TMSSP/Terex+Corporation+Runbook', '_blank');
+}
+
+if (sub == 'vwr')
+{
+    window.open('https://confluence.corp.phishme.com/display/TMSSP/VWR+International+Runbook', '_blank');
+}
+
+}
+    }())
