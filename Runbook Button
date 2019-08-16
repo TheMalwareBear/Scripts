@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name        Runbook Button
 // @author       Chance Caldwell
-// @version      0.1
+// @version      0.2
 // @namespace   https://gitlab.com/chancecaldwell/triage-scripts/snippets/1886339
 // @match        *://*.managedphishme.com/reports/*
 // @match        *://*.managedphishme.com/clusters/*
