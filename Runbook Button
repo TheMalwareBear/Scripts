@@ -2,12 +2,12 @@
 // @name        Runbook Button
 // @author       Chance Caldwell
 // @version      0.3
-// @namespace   https://gitlab.com/chancecaldwell/triage-scripts/snippets/1886339
+// @namespace   https://raw.githubusercontent.com/TheMalwareBear
 // @match        *://*.managedphishme.com/reports/*
 // @match        *://*.managedphishme.com/clusters/*
 // @grant       none
-// @updateURL    https://gitlab.com/chancecaldwell/triage-scripts/snippets/1886339/raw
-// @downloadURL  https://gitlab.com/chancecaldwell/triage-scripts/snippets/1886339/raw
+// @updateURL    https://raw.githubusercontent.com/TheMalwareBear/Scripts/master/Runbook%20Button
+// @downloadURL  https://raw.githubusercontent.com/TheMalwareBear/Scripts/master/Runbook%20Button
 // ==/UserScript==
 
 (function(){
